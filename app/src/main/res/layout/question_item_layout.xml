@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_queston"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:text="@string/question_no_1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationZ="3dp"
+            android:scrollbars="vertical"
+            android:layout_weight="1"
+            />
+
+
+        <Button
+            android:id="@+id/optionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/unselected_btn"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"
+            android:text="@string/option_a"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:translationZ="3dp" />
+
+        <Button
+            android:id="@+id/optionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/unselected_btn"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"
+            android:text="@string/option_b"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:translationZ="3dp" />
+
+        <Button
+            android:id="@+id/optionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/unselected_btn"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"
+            android:text="@string/option_c"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:translationZ="3dp" />
+
+        <Button
+            android:id="@+id/optionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/unselected_btn"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"
+            android:text="@string/option_d"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:translationZ="3dp" />
+</LinearLayout>
