@@ -159,8 +159,7 @@ public class StartTestActivity extends AppCompatActivity {
     }
     public void setAds(){
         AdRequest adRequest = new AdRequest.Builder().build();
-
-        InterstitialAd.load(this,"ca-app-pub-6144020211629189/1834029062", adRequest,
+        InterstitialAd.load(this,"ca-app-pub-6144020211629189/2034118548", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
                     public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {

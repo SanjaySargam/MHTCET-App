@@ -233,8 +233,7 @@ public class ScoreActivity extends AppCompatActivity {
     }
     public void setAdd(){
         AdRequest adRequest = new AdRequest.Builder().build();
-
-        InterstitialAd.load(this,"ca-app-pub-6144020211629189/2225339906", adRequest,
+        InterstitialAd.load(this,"ca-app-pub-6144020211629189/3482931580", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
                     public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {

@@ -300,8 +300,7 @@ public class ProfileFragment extends Fragment {
     }
     public void setAdss(){
         AdRequest adRequest = new AdRequest.Builder().build();
-
-        InterstitialAd.load(getContext(),"ca-app-pub-6144020211629189/2187194343", adRequest,
+        InterstitialAd.load(getContext(),"ca-app-pub-6144020211629189/3935245776", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
                     public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {

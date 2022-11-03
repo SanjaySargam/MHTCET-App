@@ -328,8 +328,7 @@ public class QuestionsActivity extends AppCompatActivity {
     }
     public void setAd(){
         AdRequest adRequest = new AdRequest.Builder().build();
-
-        InterstitialAd.load(this,"ca-app-pub-6144020211629189/4430851368", adRequest,
+        InterstitialAd.load(this,"ca-app-pub-6144020211629189/4987584946", adRequest,
                 new InterstitialAdLoadCallback() {
                     @Override
                     public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
