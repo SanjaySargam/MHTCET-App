@@ -40,6 +40,7 @@
             android:textSize="32sp"
 
             />
+
     </LinearLayout>
 
     <EditText
@@ -105,16 +106,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/round_corner_button"
-        android:textColor="@color/white"
-        android:textSize="18sp"
         android:elevation="5dp"
-        android:translationZ="3dp"
         android:stateListAnimator="@null"
         android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:translationZ="3dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/forgot_pass" />
 
@@ -148,7 +150,18 @@
             android:textSize="26sp" />
     </LinearLayout>
 
-<!--    <RelativeLayout-->
+    <CheckBox
+        android:id="@+id/checkBoxShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <!--    <RelativeLayout-->
 <!--        android:id="@+id/g_signBtn"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="40dp"-->

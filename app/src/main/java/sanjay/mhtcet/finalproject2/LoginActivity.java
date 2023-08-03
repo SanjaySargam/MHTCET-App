@@ -7,9 +7,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,6 +32,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
 public class LoginActivity extends AppCompatActivity {
+    private CheckBox checkBoxShowPassword;
     private EditText email, pass;
     private TextView signUpBtn;
     private FirebaseAuth mAuth;
@@ -42,6 +47,20 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        checkBoxShowPassword = findViewById(R.id.checkBoxShowPassword);
+
+        checkBoxShowPassword.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                // Toggle password visibility based on checkbox state
+                if (isChecked) {
+                    pass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                } else {
+                    pass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
+            }
+        });
+
 
         email = findViewById(R.id.email);
         pass = findViewById(R.id.password);
